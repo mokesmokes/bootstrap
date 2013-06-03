@@ -160,6 +160,10 @@ angular.module('ui.bootstrap.carousel', ['ui.bootstrap.transition'])
       } else {
         self.select(slides[index]);
       }
+    } else {
+      if (currentIndex > index) {
+        currentIndex--;
+      }
     }
   };
 }])
